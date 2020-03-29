@@ -32,11 +32,9 @@ Installation:
 Download the 3 files in this Git repository
 Edit the terraform.tfvars and enter the required credentials information
 
-From your terraform console run the terraform commands
+From your terraform console run the terraform commands (init, plan, apply)
 
-# terraform init 
-# terraform plan
-# terraform apply
+
 
 
 Results

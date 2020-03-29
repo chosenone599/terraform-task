@@ -21,8 +21,10 @@ Getting Started & Documentation
 ------------------------------------------------------------------------------------------------------------------------------------
 Documentation is available on the Terraform website:
 
-- Intro
-- Docs
+- [Intro](https://www.terraform.io/intro/index.html)
+- [Docs](https://www.terraform.io/docs/index.html)
+
+
 If you're new to Terraform and want to get started creating infrastructure, please check out our Getting Started guides on HashiCorp's learning platform. 
 
 Installation:

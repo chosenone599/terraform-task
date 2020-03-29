@@ -29,4 +29,24 @@ If you're new to Terraform and want to get started creating infrastructure, plea
 
 Installation:
 -------------------------------------------------------------------------------------------------------------------------------------
+Download the 3 files in this Git repository
+Edit the terraform.tfvars and enter the required credentials information
+
+From your terraform console run the terraform commands
+
+# terraform init 
+# terraform plan
+# terraform apply
+
+
+Results
+-------------------------------------------------------------------------------------------------------------------------------------
+The deployment will:
+- spin up the latest amazon linux EC2 instance
+- setup a security group which allows https (443) and ssh (22)
+- setup an internet gateway
+- setup a single subnet routing table
+- the EC2 instance will be started updated with latest packages
+- and nginx will be installed and a header writen to the default index.html page
+- the os_hardening_script.sh will be copied to the EC2 instances filesystem and executed
 

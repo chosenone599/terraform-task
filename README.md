@@ -17,6 +17,14 @@ The project contains the following three files:
 - terraform.tfvars      : Variables file which AWS credentials and resource tagging info gets added to.
 
 
+Getting Started & Documentation
+------------------------------------------------------------------------------------------------------------------------------------
+Documentation is available on the Terraform website:
+
+- Intro
+- Docs
+If you're new to Terraform and want to get started creating infrastructure, please check out our Getting Started guides on HashiCorp's learning platform. 
+
 Installation:
 -------------------------------------------------------------------------------------------------------------------------------------
 

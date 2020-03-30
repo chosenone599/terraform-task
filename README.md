@@ -12,9 +12,9 @@ This project contains some terraform files which deploys an enviroment on AWS co
 
 The project contains the following three files:
 
-- os_hardening_script.sh : Linux OS hardening script which disables some uncessary services and secures cron
-- terraform.tf           : Terraform deployment file which deploys and configures the VPC with a Linux EC2 nginx instance, one subnet, a security group. All the aws rewsources are also tagged with a description and a billing code reference which can be reconciled against a project 
-- terraform.tfvars      : Variables file which AWS credentials and resource tagging info gets added to.
+- terraform.tf           : Terraform deployment file which deploys and configures the VPC with a Linux EC2 nginx instance, one public subnet, one security group. All the aws rewsources are also tagged with a description and a billing code reference which can be reconciled against a project 
+- terraform.tfvars      : Variables file which contains AWS credentials and resource tagging info 
+- os_hardening_script.sh : Linux OS hardening script which disables some unecessary services and secures Cron
 
 
 Getting Started & Documentation

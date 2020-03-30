@@ -29,10 +29,9 @@ If you're new to Terraform and want to get started creating infrastructure, plea
 
 Installation:
 -------------------------------------------------------------------------------------------------------------------------------------
-Download the 3 files in this Git repository
-Edit the terraform.tfvars and enter the required credentials information
-
-From your terraform console run the terraform commands (init, plan, apply)
+- Download the 3 files in this Git repository
+- Edit the terraform.tfvars and enter the required AWS credentials information
+- From your terraform console run the terraform  (init, plan, apply) commands to deploy the enivonment on AWS
 
 
 

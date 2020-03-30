@@ -2,13 +2,13 @@
 
 Project Name:
 ------------------------------------------------------------------------------------------------------------------------------------
-Terrraform EC2 instance deployment
+Terrraform EC2 Webserver test deployment
 
 
 Description:
 ------------------------------------------------------------------------------------------------------------------------------------
-A terraform file which deploys a single EC2 linux instance to AWS.
-As part of the deployment, nginx will also be installed.
+This project contains some terraform files which deploys an enviroment on AWS containing a EC2 linux instance running nginx web server.
+
 
 The project contains the following three files:
 

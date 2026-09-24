@@ -1,0 +1,27 @@
+#!/bin/bash
+# Instance bootstrap + OS hardening, run by cloud-init on first boot.
+# Templated by Terraform via templatefile() - see aws_instance.nginx.
+set -euo pipefail
+
+exec > >(tee -a /var/log/user-data.log) 2>&1
+
+echo "Installing and starting nginx..."
+yum update -y
+yum install -y nginx
+
+mkdir -p /usr/share/nginx/html
+cat <<'HTML' > /usr/share/nginx/html/index.html
+<html><head><title>Hello ${environment_tag}!</title></head></html>
+HTML
+
+systemctl enable nginx --now
+
+echo "Removing unnecessary services..."
+yum -y remove sendmail telnet-server rsh-server telnet || true
+
+echo "Locking down cron..."
+touch /etc/cron.allow
+chmod 600 /etc/cron.allow
+awk -F: '{print $1}' /etc/passwd | grep -v root > /etc/cron.deny
+
+echo "Bootstrap complete."
